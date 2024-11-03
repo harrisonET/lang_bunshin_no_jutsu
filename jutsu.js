@@ -1,13 +1,6 @@
 const translate = require('translate-google')
 const updateJsonFile = require('./handling');
-
-const LANGS = ['id', 'ko', 'ja', 'su'];
-
-const FILE_PATH = "./input/";
-
-objToTrans = {
-    "forTesting" : "For testing purpose"
-}
+const { LANGS, FILE_PATH, objToTrans } = require('./config');
 
 for(let lang of LANGS){
     translate(objToTrans, {to: lang, except:[]}).then(res => {
