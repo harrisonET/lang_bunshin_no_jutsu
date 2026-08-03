@@ -10,14 +10,15 @@ const {
 } = require('./handling');
 
 // Configuration
-const FILE_PATH = "YOUR_FILE_PATH";
+const FILE_PATH = "D:\\Servedeck\\env1\\building-ops\\building-ops-web\\src\\main\\webapp\\i18n\\";
 const LANGS = ['id', 'vi', 'th', 'zh-CN', 'zh-TW', 'ms', 'ar'];
 const BATCH_SIZE = 30; // Max keys per translation request to avoid payload limits
 const BATCH_DELAY_MS = 300; // Delay between translation requests
 
+// Custom translation payload (Original Jutsu mode)
 // If populated, node jutsu.js will translate this object directly into target files.
 const objToTrans = {
-     "itemRemarksPlaceholder": "Enter remarks (e.g. warranty, T&Cs)"
+    "itemRemarksPlaceholder": "Enter remarks (e.g. warranty, T&Cs)"
 };
 
 // CLI Flags
